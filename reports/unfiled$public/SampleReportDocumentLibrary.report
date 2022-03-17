@@ -18,14 +18,14 @@
     <columns>
         <field>DOC_DESC</field>
     </columns>
-    <description>¿Qué documentos hay en la biblioteca de documentos?</description>
+    <description>What documents are in the document library?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>FOLDER_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Biblioteca de docume</name>
+    <name>Sample Report: Document Library</name>
     <params>
         <name>co</name>
         <value>1</value>

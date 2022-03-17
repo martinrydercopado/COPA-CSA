@@ -182,6 +182,10 @@ WARNING: Credits consumption will apply as a regular deployment since resource-w
             <translation><!-- MetaData --></translation>
         </picklistValues>
         <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+        <picklistValues>
             <masterLabel>Translations</masterLabel>
             <translation><!-- Translations --></translation>
         </picklistValues>

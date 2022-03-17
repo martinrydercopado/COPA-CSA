@@ -27,14 +27,14 @@
     <columns>
         <field>EMAIL</field>
     </columns>
-    <description>¿Cuántos candidatos se han agregado a Salesforce?</description>
+    <description>How many leads have we added to Salesforce?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de candidatos</name>
+    <name>Sample Report: # of Leads</name>
     <params>
         <name>co</name>
         <value>1</value>

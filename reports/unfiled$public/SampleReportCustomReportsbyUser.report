@@ -21,14 +21,14 @@
     <columns>
         <field>LASTRUNDATE</field>
     </columns>
-    <description>¿Quién está creando informes personalizados?</description>
+    <description>Who is creating custom reports?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>CREATED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Informes personaliza</name>
+    <name>Sample Report: Custom Reports by User</name>
     <params>
         <name>co</name>
         <value>1</value>

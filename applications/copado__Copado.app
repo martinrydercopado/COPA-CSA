@@ -7,6 +7,7 @@
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
     <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Copado Release Manager</label>
+    <logo>copado__Copado/copado__Copado_Logo.png</logo>
     <tabs>copado__Getting_Started</tabs>
     <tabs>copado__Deployment__c</tabs>
     <tabs>copado__Snapshot_Difference__c</tabs>
@@ -18,7 +19,6 @@
     <tabs>copado__OrgDiff__c</tabs>
     <tabs>copado__Scheduled_Job__c</tabs>
     <tabs>copado__Account_Summary</tabs>
-    <tabs>copado__Copado_License_Manager</tabs>
     <tabs>standard-report</tabs>
     <tabs>copado__External_CI_Setting__c</tabs>
     <tabs>copado__External_CI_Job__c</tabs>
@@ -27,4 +27,6 @@
     <tabs>copado__Application__c</tabs>
     <tabs>copado__Function__c</tabs>
     <tabs>copado__System_Property__c</tabs>
+    <tabs>copado__JobTemplate__c</tabs>
+    <tabs>copado__JobExecution__c</tabs>
 </CustomApplication>

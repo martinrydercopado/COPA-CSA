@@ -24,7 +24,7 @@
     <columns>
         <field>LOGIN_DATE</field>
     </columns>
-    <description>¿Quién no ha iniciado sesión?</description>
+    <description>Who is not logging in?</description>
     <filter>
         <criteriaItems>
             <column>ACTIVE</column>
@@ -47,7 +47,7 @@
         <field>ACTIVE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Iniciar sesión en el</name>
+    <name>Sample Report: Login Wall of Shame</name>
     <params>
         <name>active</name>
         <value>active</value>

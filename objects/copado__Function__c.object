@@ -234,10 +234,11 @@ The class must implement the MCCallBack interface.</inlineHelpText>
     </fields>
     <fields>
         <fullName>copado__Image_Name__c</fullName>
+        <defaultValue>&quot;copado-function-core:v1&quot;</defaultValue>
         <deprecated>false</deprecated>
-        <description>The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname.</description>
+        <description>Name of the docker image provided by Copado. Check our documentation site to find all available images.</description>
         <externalId>false</externalId>
-        <inlineHelpText>The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname.</inlineHelpText>
+        <inlineHelpText>Name of the docker image provided by Copado. Check our documentation site to find all available images.</inlineHelpText>
         <label>Image Name</label>
         <length>255</length>
         <required>false</required>
@@ -390,9 +391,8 @@ The class must implement the MCCallBack interface.</inlineHelpText>
         <customTabListAdditionalFields>copado__Callback_Type__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <excludedStandardButtons>Accept</excludedStandardButtons>
-        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
         <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
         <lookupDialogsAdditionalFields>copado__Type__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Description__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__API_Name__c</lookupDialogsAdditionalFields>

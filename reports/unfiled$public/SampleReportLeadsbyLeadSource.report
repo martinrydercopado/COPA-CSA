@@ -24,14 +24,14 @@
     <columns>
         <field>EMAIL</field>
     </columns>
-    <description>¿Cuántos candidatos he logrado generar a través de cada origen?</description>
+    <description>How many leads has each lead source generated for me?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LEAD_SOURCE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Candidatos por orige</name>
+    <name>Sample Report: Leads by Lead Source</name>
     <reportType>LeadList</reportType>
     <scope>org</scope>
     <showDetails>false</showDetails>

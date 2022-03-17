@@ -21,10 +21,6 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
-        <name>Notes</name>
-        <type>StandardAppMenuItem</type>
-    </appMenuItems>
-    <appMenuItems>
         <name>Search</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
@@ -50,6 +46,10 @@
     </appMenuItems>
     <appMenuItems>
         <name>PendingInterviews</name>
+        <type>StandardAppMenuItem</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>LightningInstrumentation</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>

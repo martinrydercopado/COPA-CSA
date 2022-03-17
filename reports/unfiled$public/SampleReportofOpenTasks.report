@@ -24,7 +24,7 @@
     <columns>
         <field>OPPORTUNITY</field>
     </columns>
-    <description>¿Cuántas tareas abiertas tiene cada uno de mis usuarios?</description>
+    <description>How many open tasks do each of my users have?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -36,7 +36,7 @@
         <field>ASSIGNED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de tareas abierta</name>
+    <name>Sample Report: # of Open Tasks</name>
     <params>
         <name>closed</name>
         <value>open</value>

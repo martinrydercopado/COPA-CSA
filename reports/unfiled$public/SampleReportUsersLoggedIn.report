@@ -25,14 +25,14 @@
         <aggregateTypes>Sum</aggregateTypes>
         <field>ACTIVE</field>
     </columns>
-    <description>¿Cuáles de mis usuarios están iniciando sesión?</description>
+    <description>Which of my users are logging?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>USERNAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Usuarios conectados</name>
+    <name>Sample Report: Users Logged In</name>
     <params>
         <name>active</name>
         <value>active</value>

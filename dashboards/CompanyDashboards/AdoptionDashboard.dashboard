@@ -12,7 +12,7 @@
             <componentType>Gauge</componentType>
             <displayUnits>Auto</displayUnits>
             <groupingSortProperties/>
-            <header>Usuarios conectados</header>
+            <header>Users Logged In</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -21,7 +21,7 @@
             <showRange>false</showRange>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Últimos 7 días</title>
+            <title>Last 7 Days</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -31,7 +31,7 @@
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
-            <metricLabel>Nº total de usuarios activos</metricLabel>
+            <metricLabel>Total # of Active Users</metricLabel>
             <report>unfiled$public/SampleReportActiveUsers</report>
             <showRange>false</showRange>
         </components>
@@ -42,7 +42,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Iniciar sesión en el grupo de los mejores</header>
+            <header>Login Leaderboard</header>
             <indicatorBreakpoint2>1.0</indicatorBreakpoint2>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -50,7 +50,7 @@
             <report>unfiled$public/SampleReportLoginLeaderboard</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
-            <title>Últimos 7 días</title>
+            <title>Last 7 Days</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -59,7 +59,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Iniciar sesión en el grupo de los peores</header>
+            <header>Login Wall of Shame</header>
             <indicatorBreakpoint1>0.0</indicatorBreakpoint1>
             <indicatorHighColor>#C25454</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
@@ -67,7 +67,7 @@
             <report>unfiled$public/SampleReportLoginWallofShame</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Últimos 7 días</title>
+            <title>Last 7 Days</title>
         </components>
     </leftSection>
     <middleSection>
@@ -79,14 +79,14 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Nº de actividades finalizadas</header>
+            <header># Completed Activities</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>unfiled$public/SampleReportCompletedActivities</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
-            <title>Últimos 30 días</title>
+            <title>Last 30 Days</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -95,7 +95,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Nº de tareas abiertas</header>
+            <header># Open Tasks</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -110,14 +110,14 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Nº de informes personalizados creados</header>
+            <header># of Custom Reports Created</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>unfiled$public/SampleReportCustomReportsbyUser</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowValueDescending</sortBy>
-            <title>Últimos 30 días</title>
+            <title>Last 30 Days</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -126,14 +126,14 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Nº de informes personalizados modificados</header>
+            <header># of Custom Reports Modified</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
             <report>unfiled$public/SampleReportLastModifiedBy</report>
             <showPicturesOnTables>true</showPicturesOnTables>
             <sortBy>RowLabelDescending</sortBy>
-            <title>Últimos 30 días</title>
+            <title>Last 30 Days</title>
         </components>
     </middleSection>
     <rightSection>
@@ -148,13 +148,13 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Información agregada a Salesforce</header>
+            <header>Information Added to Salesforce</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportofAccounts</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de cuentas</title>
+            <title># of Accounts</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -172,7 +172,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de contactos</title>
+            <title># of Contacts</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -190,7 +190,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de tareas y actividades</title>
+            <title># of Task and Activities</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -208,7 +208,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de informes</title>
+            <title># of Reports</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -226,7 +226,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de candidatos</title>
+            <title># of Leads</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -244,7 +244,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de oportunidades</title>
+            <title># of Opportunities</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -262,7 +262,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de documentos</title>
+            <title># of Documents</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -280,7 +280,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de casos</title>
+            <title># of Cases</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -298,13 +298,13 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de soluciones</title>
+            <title># of Solutions</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>maryder@gmail.com.csa</runningUser>
+    <runningUser>maryder@gmail.com.csaorg</runningUser>
     <textColor>#000000</textColor>
-    <title>Panel de aceptación</title>
+    <title>Adoption Dashboard</title>
     <titleColor>#000099</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>

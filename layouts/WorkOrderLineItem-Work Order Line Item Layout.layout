@@ -81,6 +81,17 @@
     <relatedLists>
         <fields>Name</fields>
         <fields>ExecutionOrder</fields>
+        <relatedList>NewWorkPlans</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>Status</fields>
+        <fields>ExecutionOrder</fields>
+        <relatedList>NewWorkSteps</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>ExecutionOrder</fields>
         <relatedList>WorkPlans</relatedList>
     </relatedLists>
     <relatedLists>
@@ -113,9 +124,6 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedFileList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <relatedList>RelatedContentNoteList</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>Name</fields>

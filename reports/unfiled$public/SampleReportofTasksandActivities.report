@@ -30,14 +30,14 @@
     <columns>
         <field>OPPORTUNITY</field>
     </columns>
-    <description>¿Cuántas tareas y actividades se están agregando a Salesforce?</description>
+    <description>How many tasks and activies are being added to Salesforce?</description>
     <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de tareas y activ</name>
+    <name>Sample Report: # of Tasks and Activities</name>
     <params>
         <name>closed</name>
         <value>all</value>
