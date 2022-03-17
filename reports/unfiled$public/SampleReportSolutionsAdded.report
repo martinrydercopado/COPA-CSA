@@ -21,7 +21,7 @@
     <columns>
         <field>LAST_UPDATE</field>
     </columns>
-    <description>¿Cuántas soluciones se agregan a la base de datos de conocimientos cada mes?</description>
+    <description>How Many Solutions are Being Added to the Knowledgebase each Month?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -33,7 +33,7 @@
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Soluciones agregadas</name>
+    <name>Sample Report: Solutions Added</name>
     <params>
         <name>co</name>
         <value>1</value>

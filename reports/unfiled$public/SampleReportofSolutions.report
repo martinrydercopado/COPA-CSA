@@ -24,14 +24,14 @@
     <columns>
         <field>LAST_UPDATE</field>
     </columns>
-    <description>¿Cuántas soluciones se han agregado a Salesforce?</description>
+    <description>How many solutions have been added to Salesforce?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de soluciones</name>
+    <name>Sample Report: # of Solutions</name>
     <params>
         <name>co</name>
         <value>1</value>

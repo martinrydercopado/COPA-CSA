@@ -11,6 +11,7 @@
     </actionOverrides>
     <brand>
         <headerColor>#00C3EF</headerColor>
+        <logo>copado__Copado_Logo_Symbol_Only_Blue</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
@@ -46,7 +47,6 @@
     <tabs>copado__Kanban_Board__c</tabs>
     <tabs>copado__Copado_DX_Panel</tabs>
     <tabs>copado__Burndown_Item__c</tabs>
-    <tabs>copado__Copado_Feature__c</tabs>
     <tabs>copado__Application__c</tabs>
     <tabs>copado__Application_Feature__c</tabs>
     <uiType>Lightning</uiType>

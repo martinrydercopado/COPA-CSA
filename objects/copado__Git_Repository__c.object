@@ -286,15 +286,13 @@
         <label>Custom Fields</label>
     </fieldSets>
     <fields>
-        <fullName>Module_External_Id__c</fullName>
-        <caseSensitive>false</caseSensitive>
-        <externalId>true</externalId>
-        <label>Module External Id</label>
-        <length>255</length>
-        <required>false</required>
+        <fullName>copado__Allow_Functions_Git_Cache__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Allow Functions Git Cache</label>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>copado__Branch_Base_URL__c</fullName>

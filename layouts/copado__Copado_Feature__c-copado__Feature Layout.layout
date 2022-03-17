@@ -60,7 +60,7 @@
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
+        <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Description</label>
@@ -119,7 +119,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
+        <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Custom Links</label>
@@ -176,18 +176,6 @@
             <sortOrder>12</sortOrder>
         </platformActionListItems>
     </platformActionList>
-    <relatedLists>
-        <customButtons>copado__Assign_to_Release</customButtons>
-        <customButtons>copado__Import_to_User_Story</customButtons>
-        <fields>NAME</fields>
-        <fields>copado__User_Story_Title__c</fields>
-        <fields>copado__Status__c</fields>
-        <fields>copado__Project__c</fields>
-        <fields>copado__Sprint__c</fields>
-        <fields>copado__Priority__c</fields>
-        <fields>OWNER.ALIAS</fields>
-        <relatedList>copado__User_Story__c.copado__Feature__c</relatedList>
-    </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
     <showInteractionLogPanel>false</showInteractionLogPanel>

@@ -41,7 +41,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
+        <customLabel>true</customLabel>
         <detailHeading>true</detailHeading>
         <editHeading>true</editHeading>
         <label>Description</label>
@@ -94,7 +94,7 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
-        <customLabel>false</customLabel>
+        <customLabel>true</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>true</editHeading>
         <label>Custom Links</label>
@@ -119,7 +119,6 @@
         <relatedList>copado__Sprint__c.copado__Project__c</relatedList>
     </relatedLists>
     <relatedLists>
-        <customButtons>copado__Mass_Add_User_Stories</customButtons>
         <fields>NAME</fields>
         <fields>copado__User_Story_Title__c</fields>
         <fields>copado__userStory_Role__c</fields>
@@ -173,7 +172,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h24000001ec7S</masterLabel>
+        <masterLabel>00h09000001AoH5</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

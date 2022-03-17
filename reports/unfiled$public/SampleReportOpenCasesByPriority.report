@@ -21,7 +21,7 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <description>¿Cuántos casos de soporte abiertos tenemos por prioridad?</description>
+    <description>How many open support cases do we have by priority?</description>
     <filter>
         <criteriaItems>
             <column>OPEN</column>
@@ -37,7 +37,7 @@
         <field>PRIORITY</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Casos abiertos por p</name>
+    <name>Sample Report: Open Cases By Priority</name>
     <params>
         <name>units</name>
         <value>h</value>

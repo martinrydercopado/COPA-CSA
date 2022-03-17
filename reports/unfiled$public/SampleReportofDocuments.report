@@ -33,14 +33,14 @@
     <columns>
         <field>FOLDER_NAME</field>
     </columns>
-    <description>¿Cuántos documentos se han agregado a Salesforce?</description>
+    <description>How many documents have been added to Salesforce?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>DOC_CREATED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de documentos</name>
+    <name>Sample Report: # of Documents</name>
     <params>
         <name>co</name>
         <value>1</value>
