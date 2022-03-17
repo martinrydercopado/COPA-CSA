@@ -43,14 +43,14 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <description>¿Qué negocios no se han cerrado todavía?</description>
+    <description>What deals have not closed yet?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>OPPORTUNITY_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Negocios abiertos</name>
+    <name>Sample Report: Open Deals</name>
     <params>
         <name>open</name>
         <value>open</value>

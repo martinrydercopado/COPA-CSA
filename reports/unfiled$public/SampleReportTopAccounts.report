@@ -43,14 +43,14 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <description>¿Qué cuentas generan más oportunidades de ventas?</description>
+    <description>Which accounts are generating the most sales opportunities?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>ACCOUNT_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Cuentas principales</name>
+    <name>Sample Report: Top Accounts</name>
     <params>
         <name>open</name>
         <value>all</value>

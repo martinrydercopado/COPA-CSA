@@ -4,42 +4,42 @@
     <standardValue>
         <fullName>Advertisement</fullName>
         <default>false</default>
-        <label>Publicidad</label>
+        <label>Advertisement</label>
     </standardValue>
     <standardValue>
         <fullName>Employee Referral</fullName>
         <default>false</default>
-        <label>Referencia del empleado</label>
+        <label>Employee Referral</label>
     </standardValue>
     <standardValue>
         <fullName>External Referral</fullName>
         <default>false</default>
-        <label>Referencia externa</label>
+        <label>External Referral</label>
     </standardValue>
     <standardValue>
         <fullName>Partner</fullName>
         <default>false</default>
-        <label>Socio</label>
+        <label>Partner</label>
     </standardValue>
     <standardValue>
         <fullName>Public Relations</fullName>
         <default>false</default>
-        <label>Relaciones públicas</label>
+        <label>Public Relations</label>
     </standardValue>
     <standardValue>
         <fullName>Seminar - Internal</fullName>
         <default>false</default>
-        <label>Seminario - Interno</label>
+        <label>Seminar - Internal</label>
     </standardValue>
     <standardValue>
         <fullName>Seminar - Partner</fullName>
         <default>false</default>
-        <label>Seminario - Socio</label>
+        <label>Seminar - Partner</label>
     </standardValue>
     <standardValue>
         <fullName>Trade Show</fullName>
         <default>false</default>
-        <label>Feria</label>
+        <label>Trade Show</label>
     </standardValue>
     <standardValue>
         <fullName>Web</fullName>
@@ -49,11 +49,11 @@
     <standardValue>
         <fullName>Word of mouth</fullName>
         <default>false</default>
-        <label>Por comentarios de terceros</label>
+        <label>Word of mouth</label>
     </standardValue>
     <standardValue>
         <fullName>Other</fullName>
         <default>false</default>
-        <label>Otros</label>
+        <label>Other</label>
     </standardValue>
 </StandardValueSet>

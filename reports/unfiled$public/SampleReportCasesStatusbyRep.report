@@ -18,7 +18,7 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <description>¿Quién tiene más casos abiertos?</description>
+    <description>Who has the most open cases?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -30,7 +30,7 @@
         <field>OWNER</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Estado de casos por</name>
+    <name>Sample Report: Cases Status by Rep</name>
     <params>
         <name>units</name>
         <value>h</value>
