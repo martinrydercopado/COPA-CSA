@@ -10,7 +10,7 @@
     <standardValue>
         <fullName>Contacted</fullName>
         <default>false</default>
-        <label>Contactado</label>
+        <label>Contacted</label>
         <converted>false</converted>
     </standardValue>
     <standardValue>
@@ -22,13 +22,13 @@
     <standardValue>
         <fullName>Qualified</fullName>
         <default>false</default>
-        <label>Habilitado</label>
+        <label>Qualified</label>
         <converted>true</converted>
     </standardValue>
     <standardValue>
         <fullName>Unqualified</fullName>
         <default>false</default>
-        <label>No habilitado</label>
+        <label>Unqualified</label>
         <converted>false</converted>
     </standardValue>
 </StandardValueSet>

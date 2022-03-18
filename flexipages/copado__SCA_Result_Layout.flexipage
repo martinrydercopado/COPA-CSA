@@ -33,6 +33,16 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentName>force:detailPanel</componentName>
+                <identifier>force_detailPanel</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-d243635f-b74e-45b1-9ea6-9ec6a708cc13</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
                     <value>Facet-d243635f-b74e-45b1-9ea6-9ec6a708cc13</value>
@@ -117,16 +127,6 @@
         </itemInstances>
         <name>sidebar</name>
         <type>Region</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentName>force:detailPanel</componentName>
-                <identifier>force_detailPanel</identifier>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-d243635f-b74e-45b1-9ea6-9ec6a708cc13</name>
-        <type>Facet</type>
     </flexiPageRegions>
     <masterLabel>SCA Result Layout</masterLabel>
     <sobjectType>copado__Static_Code_Analysis_Result__c</sobjectType>

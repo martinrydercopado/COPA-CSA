@@ -21,14 +21,14 @@
     <columns>
         <field>LASTRUNDATE</field>
     </columns>
-    <description>¿Quién está ajustando informes personalizados?</description>
+    <description>Who is tweaking custom reports?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>LASTMODIFIED</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Última modificación</name>
+    <name>Sample Report: Last Modified By</name>
     <params>
         <name>co</name>
         <value>1</value>

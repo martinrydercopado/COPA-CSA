@@ -24,7 +24,7 @@
     <columns>
         <field>LOGIN_DATE</field>
     </columns>
-    <description>¿Quién ha iniciado sesión más veces?</description>
+    <description>Who is logging in the most?</description>
     <filter>
         <criteriaItems>
             <column>ACTIVE</column>
@@ -40,7 +40,7 @@
         <field>USERNAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Iniciar sesión en el</name>
+    <name>Sample Report: Login Leaderboard</name>
     <params>
         <name>active</name>
         <value>active</value>

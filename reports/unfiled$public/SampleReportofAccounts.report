@@ -18,14 +18,14 @@
     <columns>
         <field>ADDRESS1_STATE</field>
     </columns>
-    <description>¿Cuántas cuentas se están agregando a Salesforce?</description>
+    <description>How many accounts are being added to Salesforce?</description>
     <format>Matrix</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de cuentas</name>
+    <name>Sample Report: # of Accounts</name>
     <params>
         <name>co</name>
         <value>1</value>

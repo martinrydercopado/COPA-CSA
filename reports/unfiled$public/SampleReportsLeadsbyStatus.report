@@ -27,7 +27,7 @@
     <columns>
         <field>EMAIL</field>
     </columns>
-    <description>¿Cuál es el estado de los candidatos creados en este trimestre?</description>
+    <description>What is the status of leads created this quarter?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Month</dateGranularity>
@@ -39,7 +39,7 @@
         <field>STATUS</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informes de ejemplo: Candidatos por esta</name>
+    <name>Sample Reports: Leads by Status</name>
     <params>
         <name>co</name>
         <value>1</value>

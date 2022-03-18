@@ -24,14 +24,14 @@
     <columns>
         <field>USERNAME</field>
     </columns>
-    <description>¿Quiénes son mis usuarios activos?</description>
+    <description>Who are my active users?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
         <field>ACTIVE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Usuarios activos de</name>
+    <name>Sample Report: Active Users</name>
     <params>
         <name>active</name>
         <value>active</value>

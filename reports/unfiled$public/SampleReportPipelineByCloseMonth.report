@@ -40,7 +40,7 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <description>¿Qué oportunidad en curso tengo para el mes de cierre?</description>
+    <description>What pipeline do I have by close month?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -52,7 +52,7 @@
         <field>CLOSE_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Oportunidades en cur</name>
+    <name>Sample Report: Pipeline By Close Month</name>
     <params>
         <name>open</name>
         <value>all</value>

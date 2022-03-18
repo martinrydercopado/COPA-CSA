@@ -14,7 +14,7 @@
             <gaugeMax>1500000.0</gaugeMax>
             <gaugeMin>0.0</gaugeMin>
             <groupingSortProperties/>
-            <header>Ventas</header>
+            <header>Sales</header>
             <indicatorBreakpoint1>500000.0</indicatorBreakpoint1>
             <indicatorBreakpoint2>1000000.0</indicatorBreakpoint2>
             <indicatorHighColor>#009900</indicatorHighColor>
@@ -25,7 +25,7 @@
             <showRange>false</showRange>
             <showTotal>true</showTotal>
             <showValues>false</showValues>
-            <title>Ventas cerradas a la fecha</title>
+            <title>Closed Sales To Date</title>
         </components>
         <components>
             <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
@@ -34,7 +34,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Los cinco negocios abiertos más importantes</header>
+            <header>Top 5 Open Deals</header>
             <indicatorHighColor>#00FF00</indicatorHighColor>
             <indicatorLowColor>#FF0000</indicatorLowColor>
             <indicatorMiddleColor>#FFFF00</indicatorMiddleColor>
@@ -50,7 +50,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Grupo de los mejores en ventas</header>
+            <header>Sales Leaderboard</header>
             <indicatorHighColor>#54C254</indicatorHighColor>
             <indicatorLowColor>#C25454</indicatorLowColor>
             <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
@@ -65,7 +65,7 @@
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <groupingSortProperties/>
-            <header>Cuentas clave</header>
+            <header>Key Accounts</header>
             <indicatorHighColor>#00FF00</indicatorHighColor>
             <indicatorLowColor>#FF0000</indicatorLowColor>
             <indicatorMiddleColor>#FFFF00</indicatorMiddleColor>
@@ -84,7 +84,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Tendencias de ventas mensuales a la fecha</header>
+            <header>Month to Date Sales Trending</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportMonthtoDateTrending</report>
             <showPercentage>false</showPercentage>
@@ -102,7 +102,7 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Instantánea histórica</header>
+            <header>Historical Snapshot</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportPipelineHistory</report>
             <showPercentage>false</showPercentage>
@@ -129,7 +129,7 @@
             <showPercentage>false</showPercentage>
             <showValues>true</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Candidatos por origen de candidatos</title>
+            <title>Leads by Lead Source</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -147,7 +147,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Candidato por estado de candidato</title>
+            <title>Lead by Lead Status</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -160,13 +160,13 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Análisis de oportunidades en curso</header>
+            <header>Pipeline Analysis</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportSalesPipelinebyStage</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Oportunidades en curso por etapa y tipo</title>
+            <title>Pipeline by Stage and Type</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -184,7 +184,7 @@
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Oportunidades en curso por tipo y mes de</title>
+            <title>Pipeline by Type and Close Month</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -200,14 +200,14 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Soporte</header>
+            <header>Support</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportOpenCasesByPriority</report>
             <showPercentage>false</showPercentage>
             <showPicturesOnCharts>false</showPicturesOnCharts>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Casos abiertos por prioridad</title>
+            <title>Open Cases By Priority</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -220,13 +220,13 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Casos por representante</header>
+            <header>Cases by Rep</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportCasesStatusbyRep</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelDescending</sortBy>
-            <title>Número de casos</title>
+            <title>Number of Cases</title>
             <useReportChart>false</useReportChart>
         </components>
         <components>
@@ -239,19 +239,19 @@
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
             <groupingSortProperties/>
-            <header>Base de datos de conocimientos de la solución</header>
+            <header>Solution Knowledgebase</header>
             <legendPosition>Bottom</legendPosition>
             <report>unfiled$public/SampleReportSolutionsAdded</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Nº de soluciones agregadas</title>
+            <title># of Solutions Added</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>maryder@gmail.com.csa</runningUser>
+    <runningUser>maryder@gmail.com.csaorg</runningUser>
     <textColor>#000000</textColor>
-    <title>Panel de rendimiento de la empresa</title>
+    <title>Company Performance Dashboard</title>
     <titleColor>#000099</titleColor>
     <titleSize>12</titleSize>
 </Dashboard>
