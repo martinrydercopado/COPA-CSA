@@ -44,7 +44,7 @@
     <columns>
         <field>ROLLUP_DESCRIPTION</field>
     </columns>
-    <description>¿Cuántos negocios he concretado hasta el momento?</description>
+    <description>How much business have I closed so far?</description>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
@@ -56,7 +56,7 @@
         <field>ACCOUNT_NAME</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Ventas cerradas</name>
+    <name>Sample Report: Closed Sales</name>
     <params>
         <name>open</name>
         <value>closedwon</value>

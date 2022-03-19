@@ -39,14 +39,14 @@
     <columns>
         <field>ACCOUNT_NAME</field>
     </columns>
-    <description>¿Cuántas oportunidades se están agregando a Salesforce?</description>
+    <description>How many opportunities are being added to Salesforce?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de oportunidades</name>
+    <name>Sample Report: # of Opportunities</name>
     <params>
         <name>open</name>
         <value>all</value>

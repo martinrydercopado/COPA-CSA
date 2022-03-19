@@ -34,7 +34,7 @@ The class must implement the MCCallBack interface. --></help>
         <name>copado__FlowHandler__c</name>
     </fields>
     <fields>
-        <help><!-- The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname. --></help>
+        <help><!-- Name of the docker image provided by Copado. Check our documentation site to find all available images. --></help>
         <label><!-- Image Name --></label>
         <name>copado__Image_Name__c</name>
     </fields>

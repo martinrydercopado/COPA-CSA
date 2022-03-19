@@ -45,14 +45,14 @@
     <columns>
         <field>ACCOUNT.NAME</field>
     </columns>
-    <description>¿Cuántos contactos tenemos en Salesforce?</description>
+    <description>How many contacts do we have in Salesforce?</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Month</dateGranularity>
         <field>CREATED_DATE</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Informe de ejemplo: Nº de contactos</name>
+    <name>Sample Report: # of Contacts</name>
     <params>
         <name>co</name>
         <value>1</value>

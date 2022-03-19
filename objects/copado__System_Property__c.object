@@ -194,7 +194,8 @@
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Is Sensitive</label>
+        <inlineHelpText>If this field is selected, the value won&apos;t be accessible to any user, and it will be securely saved. The value will remain hidden unless the field is unchecked</inlineHelpText>
+        <label>Hide Value</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
@@ -291,9 +292,8 @@
         <customTabListAdditionalFields>copado__ParentId__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
-        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <excludedStandardButtons>Accept</excludedStandardButtons>
-        <excludedStandardButtons>IsotopeSubscription</excludedStandardButtons>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
         <lookupDialogsAdditionalFields>copado__API_Name__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Value__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Is_Sensitive__c</lookupDialogsAdditionalFields>

@@ -2,90 +2,90 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
-        <fullName>Clientes potenciales</fullName>
+        <fullName>Prospecting</fullName>
         <default>false</default>
-        <label>Clientes potenciales</label>
+        <label>Prospecting</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Calificación</fullName>
+        <fullName>Qualification</fullName>
         <default>false</default>
-        <label>Calificación</label>
+        <label>Qualification</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>10</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Se requiere un análisis</fullName>
+        <fullName>Needs Analysis</fullName>
         <default>false</default>
-        <label>Se requiere un análisis</label>
+        <label>Needs Analysis</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>20</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Propuesta de valor</fullName>
+        <fullName>Value Proposition</fullName>
         <default>false</default>
-        <label>Propuesta de valor</label>
+        <label>Value Proposition</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>50</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Id. de los responsables de tomar la decisión</fullName>
+        <fullName>Id. Decision Makers</fullName>
         <default>false</default>
-        <label>Id. de los responsables de tomar la decisión</label>
+        <label>Id. Decision Makers</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>60</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Análisis de percepción</fullName>
+        <fullName>Perception Analysis</fullName>
         <default>false</default>
-        <label>Análisis de percepción</label>
+        <label>Perception Analysis</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>70</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Propuesta / Precio del presupuesto</fullName>
+        <fullName>Proposal/Price Quote</fullName>
         <default>false</default>
-        <label>Propuesta / Precio del presupuesto</label>
+        <label>Proposal/Price Quote</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>75</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Negociación / Revisión</fullName>
+        <fullName>Negotiation/Review</fullName>
         <default>false</default>
-        <label>Negociación / Revisión</label>
+        <label>Negotiation/Review</label>
         <closed>false</closed>
         <forecastCategory>Pipeline</forecastCategory>
         <probability>90</probability>
         <won>false</won>
     </standardValue>
     <standardValue>
-        <fullName>Cerrada ganada</fullName>
+        <fullName>Closed Won</fullName>
         <default>false</default>
-        <label>Cerrada ganada</label>
+        <label>Closed Won</label>
         <closed>true</closed>
         <forecastCategory>Closed</forecastCategory>
         <probability>100</probability>
         <won>true</won>
     </standardValue>
     <standardValue>
-        <fullName>Cerrada perdida</fullName>
+        <fullName>Closed Lost</fullName>
         <default>false</default>
-        <label>Cerrada perdida</label>
+        <label>Closed Lost</label>
         <closed>true</closed>
         <forecastCategory>Omitted</forecastCategory>
         <probability>0</probability>
