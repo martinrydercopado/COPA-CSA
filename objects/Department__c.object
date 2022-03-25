@@ -164,6 +164,17 @@
         <type>Text</type>
         <unique>true</unique>
     </fields>
+    <fields>
+        <fullName>Department_Lead__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Department Lead</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Departments</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <label>Department</label>
     <listViews>
         <fullName>All</fullName>
