@@ -18,6 +18,7 @@ installedPackages/*
 classes/copado__*
 triggers/copado__*
 pages/copado__*
+*copado__*
 
 #Translations are complex since get updated indirectly across multiple files, they can make a deployment fail
 #if a field is translated in source and it doesn't exist on destination. 
