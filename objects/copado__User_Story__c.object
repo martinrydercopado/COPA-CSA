@@ -165,7 +165,7 @@
     <description>Agile form of requirements gathering</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
@@ -586,16 +586,6 @@
     <fieldSets>
         <fullName>copado__Bundle_Sync_Fields</fullName>
         <availableFields>
-            <field>copado__Acceptance_Criteria_Status__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Acceptance_Criteria__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
             <field>copado__Apex_Code_Coverage__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -706,6 +696,16 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
+            <field>Id</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>copado__Is_Bundle__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>copado__Last_Compliance_Scan_Date__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -811,6 +811,11 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
+            <field>RecordTypeId</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>copado__Release__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -837,6 +842,11 @@
         </availableFields>
         <availableFields>
             <field>copado__Story_Points_SFDC__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>SystemModstamp</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </availableFields>
@@ -6184,11 +6194,46 @@
         <label>Work Manager Relations</label>
     </fieldSets>
     <fields>
+        <fullName>Jira_Key__c</fullName>
+        <externalId>false</externalId>
+        <label>Jira Key</label>
+        <length>12</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Potential_Conflicts__c</fullName>
+        <externalId>false</externalId>
+        <label>Potential Conflicts</label>
+        <summarizedField>copado__User_Story_Metadata__c.Conflict_Count__c</summarizedField>
+        <summaryForeignKey>copado__User_Story_Metadata__c.copado__User_Story__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Manual_Tasks__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Manual Tasks</label>
+        <summarizedField>copado__Deployment_Task__c.Manual_Task_Count__c</summarizedField>
+        <summaryForeignKey>copado__Deployment_Task__c.copado__User_Story__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
         <fullName>copado__Acceptance_Criteria_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Acceptance Criteria Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -6219,9 +6264,25 @@
         <externalId>false</externalId>
         <label>Acceptance Criteria</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>copado__Actual_Points_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to split your User Story&apos;s actual effort on implementation, reviews, testing, and documentation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope.</inlineHelpText>
+        <label>Actual Points Other</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>copado__Apex_Code_Coverage__c</fullName>
@@ -6233,6 +6294,7 @@
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -6243,6 +6305,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Apex Tests Passed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6255,6 +6318,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -6270,6 +6334,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -6284,6 +6349,7 @@
         <label>Base Branch</label>
         <length>180</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -6299,6 +6365,7 @@
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories_BA</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6311,6 +6378,7 @@
         <inlineHelpText>Describes why the User Story was cancelled, so that this information is available.</inlineHelpText>
         <label>Cancellation Reason</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -6325,6 +6393,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -6336,6 +6405,7 @@
         <externalId>false</externalId>
         <label>Close Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -6346,6 +6416,7 @@
         <externalId>false</externalId>
         <label>Compliance Criteria</label>
         <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
@@ -6359,6 +6430,7 @@
         <inlineHelpText>Current status of the User Story Compliance scan.</inlineHelpText>
         <label>Compliance Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -6404,6 +6476,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Compliance</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6414,6 +6487,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Data Privacy</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6428,6 +6502,7 @@
         <relationshipLabel>User Stories (Developer)</relationshipLabel>
         <relationshipName>User_Stories_developer</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6438,6 +6513,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Documentation Complete</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6467,6 +6543,7 @@
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6483,6 +6560,7 @@
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6495,6 +6573,7 @@
         <externalId>false</externalId>
         <inlineHelpText>If checked, this user story will not be included in the count of user stories ahead and behind.</inlineHelpText>
         <label>Exclude From CBM</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6509,6 +6588,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -6520,6 +6600,7 @@
         <externalId>false</externalId>
         <label>Functional Specifications</label>
         <length>30000</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
@@ -6533,6 +6614,7 @@
         <inlineHelpText>The git merge status of the latest pull request between the feature branch and the target branch. This value is provided by the Git Repository. If there is no value, the Git Repository did not provide one.</inlineHelpText>
         <label>Git Merge Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -6572,6 +6654,7 @@
         <externalId>false</externalId>
         <inlineHelpText>Value automatically updated by Copado whenever there are Apex Classes added or committed in the User Story.</inlineHelpText>
         <label>Has Apex Code</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6582,6 +6665,7 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Is Bundle</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6594,6 +6678,7 @@
         <inlineHelpText>Latest Compliance Scan execution date.</inlineHelpText>
         <label>Last Compliance Scan Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
@@ -6604,6 +6689,7 @@
         <externalId>false</externalId>
         <label>Last Promotion Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
@@ -6646,6 +6732,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6662,6 +6749,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -6672,6 +6760,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <externalId>false</externalId>
         <label>Latest Commit Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
@@ -6682,6 +6771,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Legal</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6693,6 +6783,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <description>If any of the Quality Gates are Manual Steps (Pull Request, Manual Test, or Manual Approval), the story should be marked as &apos;Manual Step Required&apos;.</description>
         <externalId>false</externalId>
         <label>Manual Step Required</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6703,6 +6794,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Manual Tests Passed</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -6715,6 +6807,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <inlineHelpText>Metadata types of the components listed in the User Story Selections. This value is updated automatically by Copado.</inlineHelpText>
         <label>Metadata Types in Selection</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>MultiselectPicklist</type>
@@ -7141,6 +7234,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -7153,6 +7247,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <precision>7</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -7170,6 +7265,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <relationshipLabel>User Stories (Credential)</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7184,6 +7280,21 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Planned_Points_Other__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this field to split your User Story effort estimation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope.</inlineHelpText>
+        <label>Planned Points Other</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -7216,6 +7327,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -7244,6 +7356,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -7260,6 +7373,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7272,6 +7386,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <inlineHelpText>If checked, the User Story is marked as ready to be promoted. The user story will appear as &apos;Ahead&apos; and available to be selected in the Promotion and Branch Management pages.</inlineHelpText>
         <label>Ready to Promote</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7283,6 +7398,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <inlineHelpText>When this checkbox is checked, a promotion and deployment of this User Story will be started.</inlineHelpText>
         <label>Promote and Deploy</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7293,6 +7409,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Promote as Single Step</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7305,6 +7422,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <inlineHelpText>Test Level to apply in the deployment of the User Story.</inlineHelpText>
         <label>Promotion Test Level</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -7341,6 +7459,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <label>Pull Requests Approved</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7377,6 +7496,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7393,6 +7513,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7405,6 +7526,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <inlineHelpText>Current status of the implementation of the User Story.</inlineHelpText>
         <label>Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -7472,6 +7594,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <inlineHelpText>If checked, the User Story will not be indexed for Copado&apos;s Overlap Awareness.</inlineHelpText>
         <label>Stop Indexing Metadata</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7484,6 +7607,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -7497,6 +7621,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -7514,6 +7639,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7524,6 +7650,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <label>Technical Specifications</label>
         <length>30000</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Html</type>
@@ -7539,6 +7666,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories (Test Script Owner)</relationshipLabel>
         <relationshipName>User_Stories_TestScriptOwner</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7555,17 +7683,34 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>copado__Total_Actual_Points__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>copado__Story_Points_SFDC__c + copado__Actual_Points_Other__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Sum of Actual Points and Actual Points Other. Use this field along with Actual Points Other if you need to split your User Story effort among different scopes.</inlineHelpText>
+        <label>Total Actual Points</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>copado__Total_Story_Points__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <formula>copado__Story_Points_SFDC__c+copado__Story_Points_Other__c</formula>
+        <formula>copado__Story_Points_Other__c + copado__Planned_Points_Other__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Total Story Points</label>
+        <label>Total Planned Points</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -7584,6 +7729,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -7599,6 +7745,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <relationshipLabel>User Stories</relationshipLabel>
         <relationshipName>User_Stories</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -7612,6 +7759,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <label>User Story Title</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -7624,6 +7772,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <inlineHelpText>This will create a validation deployment.  When checked, Git metadata and regular metadata will be merged to create 1 validation deployment.</inlineHelpText>
         <label>Validate Only</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7665,6 +7814,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <label>As a...</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -7675,6 +7825,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <label>Want to...</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
@@ -7685,9 +7836,47 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <externalId>false</externalId>
         <label>So that...</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Connect_log__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Connect log</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Last_Synced_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Synced Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
     </fields>
     <label>User Story</label>
     <listViews>
@@ -7696,12 +7885,11 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <columns>RECORDTYPE</columns>
         <columns>copado__User_Story_Title__c</columns>
         <columns>copado__Status__c</columns>
-        <columns>copado__Priority__c</columns>
         <columns>copado__Order__c</columns>
-        <columns>copado__US_Feature__c</columns>
-        <columns>copado__Epic__c</columns>
-        <columns>copado__Theme__c</columns>
+        <columns>Total_Manual_Tasks__c</columns>
+        <columns>Potential_Conflicts__c</columns>
         <columns>copado__Project__c</columns>
+        <columns>copado__Environment__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>copado__Priority__c</field>
@@ -7729,10 +7917,12 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
     <nameField>
         <displayFormat>US-{0000000}</displayFormat>
         <label>User Story Reference</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>User Stories</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>copado__Bug</fullName>
