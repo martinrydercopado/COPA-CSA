@@ -402,7 +402,7 @@
     <fields>
         <fullName>Member_ID__c</fullName>
         <externalId>false</externalId>
-        <formula>LastName &amp;  Text(Membership_Level__c)</formula>
+        <formula>LastName</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Member ID</label>
         <required>false</required>
