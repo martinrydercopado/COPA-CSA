@@ -31,6 +31,10 @@
                 <behavior>Edit</behavior>
                 <field>Competitor__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Client_Champion__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
